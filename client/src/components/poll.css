@@ -1,0 +1,9 @@
+.paddingTop{
+    padding-top: 20px
+}
+
+.question{
+    font-variant: normal;
+    text-transform: uppercase;
+    line-height: 25px
+}

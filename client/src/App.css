@@ -1,0 +1,11 @@
+body{
+  background-color :"#e91e63"
+}
+.App {
+  text-align: center;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
