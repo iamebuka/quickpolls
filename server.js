@@ -2,10 +2,9 @@ const express = require('express');
 const mongoose = require("mongoose")
 const bodyParser = require("body-parser")
 const Poll = require("./models/poll")
+require('dotenv').config()
 
-mongoose.connect("mongodb://test:test123@ds125181.mlab.com:25181/quickpolls");
-
-
+mongoose.connect(process.env.DB_URI);
 const app = express();
 const port = process.env.PORT || 5000;
 
