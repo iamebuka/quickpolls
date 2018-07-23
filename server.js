@@ -12,6 +12,10 @@ const port = process.env.PORT || 5000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')));
+
 //retreive poll by id
 app.get('/api/poll/:id', (req, res) => {
   Poll.findById(req.params.id, (err, result) => {
