@@ -24,27 +24,27 @@ app.get('/api/poll/:id', (req, res) => {
 
   //update poll
 app.put("/api/poll", function (req, res) {
-  console.log(req.body.response)
+ /*  console.log(req.body.response)
   Poll.findByIdAndUpdate(req.body.id, { $pushAll: { "poll_response": [...req.body.response]} }, (err, result) => {
     if (err) {
       res.send(err)
     } else {
       res.send(result)
     }
-  })
+  }) */
 
 })
 
 //create new poll
 app.post("/api/poll", (req, res) => {
-  console.log(req.body)
+ /*  console.log(req.body)
   Poll.create(req.body, function (err, result) {
     if (err) {
       res.send(err);
     } else {
       res.send(result);
     }
-  })
+  }) */
 
 })
 
