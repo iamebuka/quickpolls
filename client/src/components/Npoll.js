@@ -367,7 +367,7 @@ return rawdata;
                     <div>
                         <h6 className="heading-text">font</h6>
                         <FontPicker
-                            apiKey="AIzaSyDm72P259w82VKcsVa18fzQC6K5cgofpY4"
+                            apiKey={process.env.REACT_APP_API_KEY}
                             activeFont={this.state.poll_theme.font}
                             onChange={this.onFontChange}
                         />
